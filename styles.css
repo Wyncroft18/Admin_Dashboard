@@ -3,23 +3,23 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     font-family: 'Roboto', sans-serif;
-}
-
-svg {
-    display: block;
-    margin: auto;
 }
 
 .sidebar {
     display: grid;
     grid-template-rows: 100px 350px 250px;
-    background-color: #38bdf8;
+    background-color: #0ea5e9;
     color: white;
     grid-row: 1/ 6;
     padding-left: 30px;
+}
+
+svg {
+    display: block;
+    margin: auto;
 }
 
 .middle_sidebar {
@@ -34,11 +34,95 @@ svg {
 }
 
 .header {
-    grid-column: 2 / 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column: 2 / 7;
     box-shadow: 0 4px 2px -2px gray;
+    padding: 20px 40px;
+}
+
+.search_area {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-column: 1 / 2;
+    align-items: center;
+    gap: 10px;
+}
+
+.search_bar {
+    border-radius: 18px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 23px;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    background-color: #e2e8f0;
+}
+
+.notification_area {
+    display: grid;
+    grid-template-columns: 40px 50px auto;
+    justify-content: end;
+    align-items: center;
+    grid-column: 2 / 3;
+    gap: 30px;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+img {
+    border-radius: 50%;
+}
+
+img.small_dog {
+    height: 50px;
+    width: 50px;
+}
+
+
+.greeting_area {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-column: 1 / 2;
+    align-items: center;
+    gap: 20px;
+}
+
+img.big_dog {
+    height: 80px;
+    width: 80px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column: 2 / 3;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .content {
     background-color: #e2e8f0;
-    grid-area: 2 / 2 / 6 / 6;
+    grid-area: 2 / 2 / 7 / 7;
 }
