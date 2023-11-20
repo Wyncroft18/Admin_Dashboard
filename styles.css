@@ -5,11 +5,32 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    font-family: 'Roboto', sans-serif;
+}
+
+svg {
+    display: block;
+    margin: auto;
 }
 
 .sidebar {
+    display: grid;
+    grid-template-rows: 100px 350px 250px;
     background-color: #38bdf8;
+    color: white;
     grid-row: 1/ 6;
+    padding-left: 30px;
+}
+
+.middle_sidebar {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+}
+
+.dashboard, .home, .profile, .message, .history, .task, .communities, .settings, .support, .privacy {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
 }
 
 .header {
