@@ -53,6 +53,7 @@ svg {
 .search_bar {
     border-radius: 18px;
     font-size: 15px;
+    font-weight: 500;
     padding-left: 15px;
     padding-right: 23px;
     height: 35px;
@@ -92,6 +93,10 @@ img.small_dog {
     gap: 20px;
 }
 
+.greeting_area p, .greeting_area h2 {
+    margin: 10px;
+}
+
 img.big_dog {
     height: 80px;
     width: 80px;
@@ -123,6 +128,32 @@ button {
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: #e2e8f0;
     grid-area: 2 / 2 / 7 / 7;
+    padding: 10px 30px;
+} 
+
+.content h2{
+    text-align: center;
+}
+
+.following {
+    display: grid;
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.content img {
+    height: 50px;
+    width: 50px;
+}
+
+.brian, .alpha, .yogurt, .rex, .chichi {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
 }
