@@ -133,6 +133,7 @@ button {
     background-color: #e2e8f0;
     grid-area: 2 / 2 / 7 / 7;
     padding: 10px 30px;
+    gap: 20px;
 } 
 
 .content h2{
@@ -147,7 +148,7 @@ button {
     gap: 20px;
 }
 
-.content img {
+.following img {
     height: 50px;
     width: 50px;
 }
@@ -156,4 +157,38 @@ button {
     display: grid;
     grid-template-columns: 50px 1fr;
     gap: 20px;
+}
+
+.newsfeed {
+    display: grid;
+    grid-template-rows: 68px 1fr;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #64748b;
+    border-radius: 12px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.replies {
+    background-color: #a8a29e;
+    border-radius: 12px;
+    padding: 0px 10px 10px 10px ;
+}
+
+.feed h3 {
+    color: #082f49;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.feed img {
+    border-radius: 0;
 }
